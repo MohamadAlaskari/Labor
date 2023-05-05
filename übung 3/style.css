@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#myCanvas {
+    width: 400px;
+    height: 400px;
+}
+
+.form {
+    width: 400px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.form input {
+    font-size: 16px;
+    height: 28px;
+
+}
+
+.form button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form #add {
+    background-color: #109c10;
+}
+
+.form #remove {
+    background-color: #c80d0d;
+}

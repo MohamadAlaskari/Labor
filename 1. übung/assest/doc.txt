@@ -1,0 +1,34 @@
+MI2 – LABOR 1
+Lotto-Spiel: HTML, CSS und JavaScript Grundlagen
+In diesem Labor erstellen Sie ein einfaches, interaktives Lotto-Spiel mit HTML, CSS und JavaScript:
+Auf der Web-Seite können vom Spieler zunächst 6 verschiedene Zahlen zwischen 1 und 49 
+eingegeben werden (Der „TIP“). 
+Wie Sie die Eingabe realisieren ist Ihnen überlassen (1 Eingabefeld ?, 6 Eingabefelder ?, 49 
+anklickbare Felder,…?). 
+Wenn 6 Zahlen korrekt eingegeben wurden, erscheint ein Button „Spielen“. 
+Wenn der Spieler dann diesen Button klickt, werden 6 unterschiedliche Zahlen zwischen 1 und 49 
+zufällig erzeugt (die „Ziehung“). 
+Diese Zahlen werden in sortierter Reihenfolge angezeigt.
+Zahlen die mit dem „TIP“ übereinstimmen, werden mit grünem Hintergrund hinterlegt.
+Die Anzahl der korrekt getippten Zahlen wird gezählt. Die Anzahl und ein zur Anzahl passender Text 
+(z.B. so etwas wie „Schade“ bei 0 , „Herzlichen Glückwunsch“ bei 3 oder mehr, oder 
+„UNGLAUBLICH!“ bei 6 Richtigen) wird ausgegeben. 
+Wie in der Vorlesung letzte Woche besprochen empfiehlt es sich, zuerst eine Skizze zu machen. Dann 
+können Sie überlegen, was Sie in HTML und was in JavaScript oder in CSS umsetzen. 
+Nach einer kurzen Wartezeit kann der Nutzer über den Button neue Zahlen „ziehen“ und das Spiel 
+weiderholt sich.
+Hier noch ein paar Hinweise: 
+1. Erstellen Sie eine HTML Seite mit Titel, Überschrift und einem Einführungstext, der erklärt
+worum es geht und wie zu spielen ist (siehe oben). Erstellen Sie auch die Elemente oder 
+Platzhalter DIVs die Sie später aus JavaScript ansprechen wollen und geben Sie diesen Namen 
+(oder Klassen).
+2. Aus dem Beispiel in der letzten Woche kennen Sie alle notwendigen HTML und JavaScript 
+Konzepte. (Falls nicht, wissen Sie was zu tun ist… ) 
+3. Die passenden CSS-Eigenschaften (insb. Hintergrund-Farbe) finden Sie in der (Mozilla) Online 
+Dokumentation. Falls Sie nicht wissen, wo Sie diese finden…
+4. Eine grundsätzlich vollständige Version sollten Sie zeitlich in diesem Labor umsetzen können. 
+Wenn Sie wesentlich länger brauchen, sollten Sie selbständig ein paar Übungen zu HTML und 
+JavaScript machen. 
+5. Falls Sie noch Zeit haben, können Sie das Spiel erweitern: Z.B. durch neue Eingabe oder 
+Änderung der getippten Zahlen, schönere Darstellung der Inhalte (z.B. gezogene Zahlen in 
+Kreisen dargestellt), oder was Ihnen sonst noch so einfällt
