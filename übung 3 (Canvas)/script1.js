@@ -54,11 +54,8 @@ function clearCanvas(bg = "white") {
     context.clearRect(0, 0, canvas.width, canvas.height);
 }
 
-function creatball(ballsnum) {
-    for (let index = 0; index < ballsnum; index++) {
-        balls.push(new Ball())
-
-    }
+function creatball() {
+    balls.push(new Ball())
     console.log(balls)
 }
 
@@ -66,20 +63,17 @@ const addlistiner = () => {
     add.addEventListener('click', () => {
         ballsnum += 1
         BallNr.innerHTML = ballsnum;
-        balls = []
-        creatball(ballsnum);
+        creatball();
     })
 
 
 }
 function removelistiner() {
     remove.addEventListener('click', () => {
-        if (ballsnum !== 1) {
-
+        if (ballsnum !== 0) {
             ballsnum -= 1
             BallNr.innerHTML = ballsnum;
-            balls = []
-            creatball(ballsnum);
+            balls.pop()
         }
 
 
@@ -91,20 +85,21 @@ function removelistiner() {
 
 
 function gameLoop() {
-
     clearCanvas();
     balls.forEach(ball => {
         ball.drawBall();
         ball.moveBall();
     })
-
-
-
     requestAnimationFrame(gameLoop);
 }
-addlistiner();
-removelistiner();
-BallNr.innerHTML = ballsnum;
-creatball(ballsnum)
 
-gameLoop(); // Start 
+function app() {
+    addlistiner();
+    removelistiner();
+    BallNr.innerHTML = ballsnum;
+    creatball(ballsnum)
+    gameLoop()
+
+}
+app()
+
